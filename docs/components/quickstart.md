@@ -8,7 +8,7 @@
 
 ```html
 <template>
-	<u-action-sheet :list="list" v-model="show"></u-action-sheet>
+	<u-action-sheet :actions="list" :show="show"></u-action-sheet>
 </template>
 
 <script>
@@ -16,13 +16,13 @@
 		data() {
 			return {
 				list: [{
-					text: '点赞',
+					name: '点赞',
 					color: 'blue',
 					fontSize: 28
 				}, {
-					text: '分享'
+					name: '分享'
 				}, {
-					text: '评论'
+					name: '评论'
 				}],
 				show: true
 			}
@@ -46,7 +46,7 @@
 
 ```html
 <template>
-	<u-action-sheet :list="list" v-model="show"></u-action-sheet>
+	<u-action-sheet :actions="list" :show="show"></u-action-sheet>
 </template>
 
 <script>
@@ -58,13 +58,13 @@
 		data() {
 			return {
 				list: [{
-					text: '点赞',
+					name: '点赞',
 					color: 'blue',
 					fontSize: 28
 				}, {
-					text: '分享'
+					name: '分享'
 				}, {
-					text: '评论'
+					name: '评论'
 				}],
 				show: true
 			}
